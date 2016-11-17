@@ -12,18 +12,20 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 	<style>
-	body{
+	div.bg{
 	background-image: url("images/milkyWay.jpg");
-	-webkit-background-size: cover;
+	background-size: cover;
     background-repeat: no-repeat;
-	background-attachment:fixed; 
+	float:left;
+	width:1920px;
+	height:1080px;
 
 	}
 	
 	@media only screen and (max-width: 767px) {
 	body{
 	background-image: url("images/milkyWayMobile.jpg");
-	-webkit-background-size: cover;
+	background-size: cover;
     background-repeat: no-repeat;
     background-attachment:fixed; 
 	}
@@ -33,9 +35,12 @@
   </head>
 
   <body>
-  <div id="content-wrapper">
-	<div id="main-content">
-	<a href="https://caladany.github.io/" target="_self">Return</a>
+  <div class="bg" >
+    <div id="content-wrapper">
+	  <div id="main-content">
+	  <a href="https://caladany.github.io/" target="_self">Return</a>
+	  </div>
 	</div>
   </div>
+
 	
