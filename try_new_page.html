@@ -49,14 +49,7 @@
   </head>
 
   <body>
-    <script>
-		var pic;
-		if (screen.width <= 1080) {
-          pic = "milkyWayMobile.jpg"
-		}
-        document.getElementById('bg').src = pic;
-	  }
-	</script>
+    
 	
     <div style="position:absolute; width:100%; z-index:-1; left:0; top:0;" onload>
       <img id="bg" src="images/milkyWay.jpg"  width="100%" style="left:0; top:0;">
@@ -66,5 +59,11 @@
 	  <a href="https://caladany.github.io/" target="_self">Return</a>
 	  </div>
 	</div>
-
+<script>
+	  var pic;
+	  if (screen.width <= 1080) {
+        pic = "images/milkyWayMobile.jpg";
+        document.getElementById('bg').src = pic;
+	  }
+	</script>
 	
