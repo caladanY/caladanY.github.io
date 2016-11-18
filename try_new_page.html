@@ -50,7 +50,6 @@
 
   <body>
     <script>
-      function compMobile() {
 		var pic;
 		if (screen.width <= 1080) {
           pic = "milkyWayMobile.jpg"
@@ -59,7 +58,7 @@
 	  }
 	</script>
 	
-    <div style="position:absolute; width:100%; z-index:-1; left:0; top:0;">
+    <div style="position:absolute; width:100%; z-index:-1; left:0; top:0;" onload>
       <img id="bg" src="images/milkyWay.jpg"  width="100%" style="left:0; top:0;">
     </div>
     <div id="content-wrapper">
