@@ -40,6 +40,7 @@
           min-width: 1024px;
 	      width: 100%;
           height: auto;
+		  
 	      position: fixed;
 		}
 	  }
@@ -48,12 +49,23 @@
   </head>
 
   <body>
-  <div class="bg">
+    <script>
+      function compMobile() {
+		var pic;
+		if (screen.width <= 1080) {
+          pic = "milkyWayMobile.jpg"
+		}
+        document.getElementById('bg').src = pic;
+	  }
+	</script>
+	
+    <div style="position:absolute; width:100%; z-index:-1; left:0; top:0;">
+      <img id="bg" src="images/milkyWay.jpg"  width="100%" style="left:0; top:0;">
+    </div>
     <div id="content-wrapper">
 	  <div id="main-content">
 	  <a href="https://caladany.github.io/" target="_self">Return</a>
 	  </div>
 	</div>
-  </div>
 
 	
